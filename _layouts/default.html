@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Alicia A Jasmine
+http://www.100webhosting.com
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Nature Green   
+Description: A two-column, fixed-width design with green color scheme.
+Version    : 1.0
+Released   : 23-08-2010
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Natural Order</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="/">Natural Order</a></h1>
+				<p> Random Ramblings</p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+			{{ content }}
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<div id="search" >
+								<form method="get" action="#">
+									<div>
+										<input type="text" name="s" id="search-text" value="" />
+										<input type="submit" id="search-submit" value="GO" />
+									</div>
+								</form>
+							</div>
+							<div style="clear: both;">&nbsp;</div>
+						</li>
+						<li>
+							<h2>About Us</h2>
+							<p>We provide corporate and government agencies with top customer support, dedicated and customised solutions coupled with up-to-date technologies.</p>
+						</li>
+						<li>
+							<h2>Archives</h2>
+							<ul>
+								{% for post in site.posts %}
+								<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+								{% endfor %}
+							</ul>
+						</li>
+						<li>
+							<h2>Latest Clients</h2>
+							<ul>
+								<li><a href="#">Top 100 Web Hosting</a></li>
+								<li><a href="#">Free Web Templates</a></li>
+								<li><a href="#">WordPress Themes</a></li>
+								<li><a href="#">Company Name</a></li>
+								<li><a href="#">Another Company Name</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<!-- Please leave the link to http://www.100webhosting.com intact -->
+	<p>Copyright &copy; 2011 <a href="http://www.temp.dk/"><strong>Thomas Petersen</strong></a> | Design by <a href="http://www.100webhosting.com/"><strong>100 Web Hosting</strong></a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
