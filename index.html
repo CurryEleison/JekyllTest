@@ -2,7 +2,11 @@
 layout: default
 title: Gristly Rumors
 ---
-				<div id="content">
+<ul>
+{% for ite in site.categories.main %}
+<li>skjd
+{% endfor %}
+ </ul>
 					{% for post in site.posts %}
 					<div class="post">
 						<h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -15,6 +19,3 @@ title: Gristly Rumors
 					</div>
 
 	  {% endfor %}
-					<div style="clear: both;">&nbsp;</div>
-				</div>
-				<!-- end #content -->
