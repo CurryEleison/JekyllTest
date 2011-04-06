@@ -2,20 +2,25 @@
 layout: default
 title: Gristly Rumors
 ---
-<ul>
-{% for ite in site.categories.main %}
-<li>skjd
-{% endfor %}
- </ul>
-					{% for post in site.posts %}
-					<div class="post">
-						<h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-						<div style="clear: both;">&nbsp;</div>
-						<div class="entry">
-							<p><strong>{{ post.date | date_to_string }}</strong></p>
-							{{ post.content | truncatewords:200  }}
-							<p><a href="{{ post.url }}">more...</a></p>
-						</div>
-					</div>
 
+					{% for post in site.posts %}
+					
+					
+					
+					
+
+
+					
+					<section> 
+				<article class="blogPost"> 
+					<header> 
+						<h2>{{ post.title }}</h2> 
+						<p>Posted on <time datetime="2009-06-29T23:31+01:00">{{ post.date | date_to_string }}</time> by <a href="#">{{post.author}}</a> - <a href="#comments">3 comments</a></p> 
+					</header> 
+					<div> 
+			{{ post.content | truncatewords:200  }}
+			</div> 
+				</article> 
+			</section> 
+					
 	  {% endfor %}
