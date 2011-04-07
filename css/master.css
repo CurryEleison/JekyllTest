@@ -105,8 +105,7 @@ nav {
 
 	
 	/* Border-radius not implemented yet */
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
+	border-radius: 22px;
 }
 
 	#intro h2, #intro p {
@@ -134,8 +133,7 @@ nav {
 		height: 100%;
 	
 		/* Border-radius not implemented yet */
-		-moz-border-radius: 22px;
-		-webkit-border-radius: 22px;
+	border-radius: 22px;
 	}
 
 
@@ -212,8 +210,7 @@ nav {
 		padding: 21px;
 		background: #E3E3E3;
 		border: 1px solid #d7d7d7;
-		-moz-border-radius: 11px;
-		-webkit-border-radius: 11px;
+		border-radius: 11px;
 	}
 	
 		#comments article header {
@@ -290,8 +287,7 @@ aside section {
 	background: url("/images/sidebar_section_background.png") repeat-x;
 	
 	/* Border-radius not implemented yet */
-	-moz-border-radius: 11px;
-	-webkit-border-radius: 11px;
+	border-radius: 11px;
 }
 
 	aside section ul {
